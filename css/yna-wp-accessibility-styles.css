@@ -1,0 +1,354 @@
+.accessibility--on a:focus {
+  box-shadow: 0px 0px 8px rgba(0, 187, 255, 0.54);
+  color: inherit; }
+
+.accessibility--on a:focus:active {
+  box-shadow: none;
+  color: inherit; }
+
+.sr-only-focusable {
+  display: block;
+  padding: 1em !important;
+  font-size: 110%;
+  color: #fff !important;
+  background-color: black;
+  outline: 0;
+  text-align: center; }
+  .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto; }
+
+.access-control-trigger {
+  background-color: #002D68;
+  font-size: 115%;
+  color: white;
+  position: fixed;
+  z-index: 9999999;
+/*  top: 0;*/
+	top:35px;
+  left: 0;
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 5px; }
+  .access-control-trigger:hover, .access-control-trigger:active, .access-control-trigger:focus {
+    color: white; }
+
+.rtl .access-control-trigger {
+  left: auto;
+  right: 0; }
+
+.accessibility-controls {
+  width: 280px;
+  padding: 10px 15px;
+  background-color: white;
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 999999;
+  top: 30px;
+  left: 0;
+  display: none; }
+  .accessibility-controls.active {
+    display: block; }
+  .accessibility-controls .controls-group {
+    margin-bottom: 8px; }
+    .accessibility-controls .controls-group h3 {
+      font-size: 110%;
+      color: black;
+      margin-top: 0;
+      margin-bottom: 3px; }
+    .accessibility-controls .controls-group .change-font-size {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px;
+      line-height: 1; }
+      .accessibility-controls .controls-group .change-font-size.change-font-150 {
+        font-size: 24px; }
+      .accessibility-controls .controls-group .change-font-size.change-font-200 {
+        font-size: 32px; }
+      .accessibility-controls .controls-group .change-font-size:focus, .accessibility-controls .controls-group .change-font-size:active {
+        border: 1px dotted black; }
+      .accessibility-controls .controls-group .change-font-size.active {
+        border: 1px dotted black; }
+    .accessibility-controls .controls-group .change-contrast {
+      margin-bottom: 5px;
+      padding: 3px 5px;
+      border: 1px solid black;
+      cursor: pointer; }
+      .accessibility-controls .controls-group .change-contrast.change-contrast-gray {
+        background-color: lightgrey; }
+      .accessibility-controls .controls-group .change-contrast.change-contrast-high {
+        color: white;
+        background-color: black; }
+    .accessibility-controls .controls-group .flash-block {
+      width: 50%;
+      float: right;
+      padding: 5px 6px;
+      border: 1px solid black;
+      text-align: center;
+      cursor: pointer; }
+      .accessibility-controls .controls-group .flash-block:last-child {
+        border-right: 0; }
+      .accessibility-controls .controls-group .flash-block.active {
+        background-color: black;
+        color: white; }
+  .accessibility-controls .access-control-close {
+    clear: both;
+    display: block;
+    margin-top: 50px;
+    padding: 5px 6px;
+    border: 1px solid black;
+    text-align: center;
+    color: black; }
+
+.rtl .accessibility-controls {
+  left: auto;
+  right: 0; }
+
+body.font-size-150 {
+  font-size: 22px; }
+  body.font-size-150 .hp-carousel-item h4,
+  body.font-size-150 nav.mega-menu li .sub li.menu-item > a {
+    font-size: 80% !important; }
+  body.font-size-150 p,
+  body.font-size-150 nav#main-navigation .menu ul.sub-menu > li {
+    font-size: 100%; }
+  body.font-size-150 p,
+  body.font-size-150 .widget ul li > a {
+    line-height: 1.2; }
+  body.font-size-150 nav .menu li {
+    font-size: 110%; }
+  body.font-size-150 h3, body.font-size-150 .blog-item .quote-excerpt {
+    font-size: 125%; }
+  body.font-size-150 a.sf-button.sf-icon-stroke span.text {
+    font-size: 150%; }
+
+body.font-size-200 {
+  font-size: 32px; }
+  body.font-size-200 .hp-carousel-item h4,
+  body.font-size-200 nav.mega-menu li .sub li.menu-item > a {
+    font-size: 80%; }
+  body.font-size-200 p,
+  body.font-size-200 h3,
+  body.font-size-200 nav#main-navigation .menu ul.sub-menu > li {
+    font-size: 100%; }
+  body.font-size-200 p,
+  body.font-size-200 h1, body.font-size-200 h2, body.font-size-200 h3, body.font-size-200 h4, body.font-size-200 h5, body.font-size-200 h6,
+  body.font-size-200 time,
+  body.font-size-200 .login-text,
+  body.font-size-200 .excerpt,
+  body.font-size-200 .count-subject,
+  body.font-size-200 .textwidget,
+  body.font-size-200 .widget ul li > a {
+    line-height: 1.2 !important; }
+  body.font-size-200 nav .menu li {
+    font-size: 110%; }
+  body.font-size-200 h3, body.font-size-200 .blog-item .quote-excerpt {
+    font-size: 125%; }
+  body.font-size-200 a.sf-button.sf-icon-stroke span.text {
+    font-size: 150%; }
+
+body.contrast-gray #login-menu a:before,
+body.contrast-gray .icon-home,
+body.contrast-gray .tp-bgimg,
+body.contrast-gray .banner-excerpt a:after,
+body.contrast-gray .ss-search,
+body.contrast-gray .spb_parallax_asset.parallax-stellar,
+body.contrast-gray .page-content .spb_text_column ul li:before,
+body.contrast-gray .page-heading.fancy-heading,
+body.contrast-gray img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
+body.contrast-gray nav .menu > li.menu-item > a,
+body.contrast-gray .ui-widget-content a,
+body.contrast-gray nav .menu ul.sub-menu li.menu-item:hover > a,
+body.contrast-gray a,
+body.contrast-gray #language-btn {
+  color: black !important; }
+  body.contrast-gray nav .menu > li.menu-item > a:hover, body.contrast-gray nav .menu > li.menu-item > a:focus,
+  body.contrast-gray .ui-widget-content a:hover,
+  body.contrast-gray .ui-widget-content a:focus,
+  body.contrast-gray nav .menu ul.sub-menu li.menu-item:hover > a:hover,
+  body.contrast-gray nav .menu ul.sub-menu li.menu-item:hover > a:focus,
+  body.contrast-gray a:hover,
+  body.contrast-gray a:focus,
+  body.contrast-gray #language-btn:hover,
+  body.contrast-gray #language-btn:focus {
+    color: darkgray; }
+body.contrast-gray .owl-theme .owl-controls .owl-page.active span {
+  background-color: black; }
+body.contrast-gray .hp-carousel-item {
+  background: black !important; }
+  body.contrast-gray .hp-carousel-item a {
+    color: white !important; }
+body.contrast-gray a,
+body.contrast-gray #footer a {
+  text-decoration: underline; }
+body.contrast-gray h1, body.contrast-gray h2, body.contrast-gray h3, body.contrast-gray h4,
+body.contrast-gray .sf-count-asset .count-number, body.contrast-gray .sf-count-asset .count-subject,
+body.contrast-gray #footer h6,
+body.contrast-gray #footer,
+body.contrast-gray a,
+body.contrast-gray #footer p,
+body.contrast-gray #footer a,
+body.contrast-gray nav#main-navigation .menu ul.sub-menu > li a,
+body.contrast-gray .sf-count-asset .count-subject {
+  color: #5d5d5d; }
+body.contrast-gray nav#main-navigation .menu ul.sub-menu > li a:hover,
+body.contrast-gray nav .menu ul.sub-menu li.menu-item:hover > a,
+body.contrast-gray nav .menu ul.sub-menu li.menu-item > a:hover {
+  color: black; }
+body.contrast-gray #language-btn,
+body.contrast-gray a.sf-button.sf-icon-stroke i {
+  color: white; }
+body.contrast-gray .sidebar .widget li.current_page_item > a,
+body.contrast-gray #sevice-center #up,
+body.contrast-gray .widget ul li > a {
+  color: #5d5d5d; }
+  body.contrast-gray .sidebar .widget li.current_page_item > a:hover,
+  body.contrast-gray #sevice-center #up:hover,
+  body.contrast-gray .widget ul li > a:hover {
+    color: black; }
+body.contrast-gray .sf-button.accent {
+  background-color: black;
+  color: white; }
+  body.contrast-gray .sf-button.accent:hover, body.contrast-gray .sf-button.accent:focus {
+    color: black; }
+body.contrast-gray .access-control-trigger {
+  color: white !important; }
+body.contrast-gray input[type="text"], body.contrast-gray input[type="email"], body.contrast-gray input[type="password"], body.contrast-gray textarea, body.contrast-gray select, body.contrast-gray .wpcf7 input[type="text"], body.contrast-gray .wpcf7 input[type="email"], body.contrast-gray .wpcf7 textarea, body.contrast-gray .wpcf7 select, body.contrast-gray .ginput_container input[type="text"], body.contrast-gray .ginput_container input[type="email"], body.contrast-gray .ginput_container textarea, body.contrast-gray .ginput_container select, body.contrast-gray .mymail-form input[type="text"], body.contrast-gray .mymail-form input[type="email"], body.contrast-gray .mymail-form textarea, body.contrast-gray .mymail-form select {
+  background-color: lightgray !important;
+  border-color: black;
+  color: black !important; }
+body.contrast-gray .recent-post figure, body.contrast-gray span.highlighted, body.contrast-gray span.dropcap4, body.contrast-gray .loved-item:hover .loved-count, body.contrast-gray .flickr-widget li, body.contrast-gray .portfolio-grid li, body.contrast-gray input[type="submit"], body.contrast-gray .wpcf7 input.wpcf7-submit[type="submit"], body.contrast-gray .gform_wrapper input[type="submit"], body.contrast-gray .mymail-form input[type="submit"], body.contrast-gray .woocommerce-page nav.woocommerce-pagination ul li span.current, body.contrast-gray .woocommerce nav.woocommerce-pagination ul li span.current, body.contrast-gray figcaption .product-added, body.contrast-gray .woocommerce .wc-new-badge, body.contrast-gray .yith-wcwl-wishlistexistsbrowse a, body.contrast-gray .yith-wcwl-wishlistaddedbrowse a, body.contrast-gray .woocommerce .widget_layered_nav ul li.chosen > *, body.contrast-gray .woocommerce .widget_layered_nav_filters ul li a, body.contrast-gray .sticky-post-icon, body.contrast-gray .fw-video-close:hover {
+  background-color: black !important;
+  color: #5d5d5d !important; }
+body.contrast-gray input[type="button"].btn-info {
+  background-color: lightgray;
+  color: black;
+  border-color: black; }
+body.contrast-gray .map-filters {
+  background-color: lightgray;
+  color: black; }
+body.contrast-gray nav#main-navigation .menu > li > a span.nav-line {
+  background-color: black; }
+
+body.contrast-high {
+  color: white !important;
+  background-color: black !important; }
+  body.contrast-high .page-content,
+  body.contrast-high header#header,
+  body.contrast-high #header-section #main-nav,
+  body.contrast-high section#footer,
+  body.contrast-high .accessibility-controls, body.contrast-high.page-id-764 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-125 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-249 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-764 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-771 .col-sm-4 > .spb_wrapper,
+  body.contrast-high .full-width-row-products-body .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-3094 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-3091 .col-sm-4 > .spb_wrapper, body.contrast-high.page-id-3088 .col-sm-4 > .spb_wrapper, body.contrast-high.loby-gray-boxes .col-sm-4 > .spb_wrapper, body.contrast-high.customer-service-page .col-sm-6.column_container {
+    background-color: black !important; }
+  body.contrast-high .accessibility-controls .controls-group .change-contrast.change-contrast-normal,
+  body.contrast-high #language-btn,
+  body.contrast-high .ss-search {
+    background-color: white !important;
+    color: black !important; }
+  body.contrast-high #sevice-center #down,
+  body.contrast-high #login-menu a span,
+  body.contrast-high nav#main-navigation .menu li.menu-item > a {
+    color: white !important; }
+  body.contrast-high nav .menu > li.menu-item > a,
+  body.contrast-high .ui-widget-content a,
+  body.contrast-high nav .menu ul.sub-menu li.menu-item:hover > a,
+  body.contrast-high a {
+    color: white !important; }
+    body.contrast-high nav .menu > li.menu-item > a:hover, body.contrast-high nav .menu > li.menu-item > a:focus,
+    body.contrast-high .ui-widget-content a:hover,
+    body.contrast-high .ui-widget-content a:focus,
+    body.contrast-high nav .menu ul.sub-menu li.menu-item:hover > a:hover,
+    body.contrast-high nav .menu ul.sub-menu li.menu-item:hover > a:focus,
+    body.contrast-high a:hover,
+    body.contrast-high a:focus {
+      color: lightgray; }
+  body.contrast-high .owl-theme .owl-controls .owl-page.active span {
+    background-color: white !important; }
+  body.contrast-high .menu-left nav.mega-menu li .sub-container,
+  body.contrast-high nav.mega-menu li .mega .sub > .row,
+  body.contrast-high #page-wrap {
+    background-color: black !important; }
+  body.contrast-high nav#main-navigation .menu ul.sub-menu > li a:hover {
+    text-decoration: underline !important; }
+  body.contrast-high .hp-carousel-item {
+    background: black !important; }
+    body.contrast-high .hp-carousel-item a {
+      color: white !important; }
+  body.contrast-high a,
+  body.contrast-high #footer a {
+    text-decoration: underline; }
+  body.contrast-high h1, body.contrast-high h2, body.contrast-high h3, body.contrast-high h4,
+  body.contrast-high .sf-count-asset .count-number, body.contrast-high .sf-count-asset .count-subject,
+  body.contrast-high #footer h6,
+  body.contrast-high #footer,
+  body.contrast-high a,
+  body.contrast-high #footer p,
+  body.contrast-high #footer a,
+  body.contrast-high nav#main-navigation .menu ul.sub-menu > li a,
+  body.contrast-high .sf-count-asset .count-subject {
+    color: white !important; }
+  body.contrast-high nav#main-navigation .menu ul.sub-menu > li a:hover,
+  body.contrast-high nav .menu ul.sub-menu li.menu-item:hover > a,
+  body.contrast-high nav .menu ul.sub-menu li.menu-item > a:hover {
+    color: black; }
+  body.contrast-high #language-btn,
+  body.contrast-high a.sf-button.sf-icon-stroke i {
+    color: white; }
+  body.contrast-high .sidebar .widget li.current_page_item > a,
+  body.contrast-high #sevice-center #up,
+  body.contrast-high .widget ul li > a {
+    color: white !important; }
+    body.contrast-high .sidebar .widget li.current_page_item > a:hover,
+    body.contrast-high #sevice-center #up:hover,
+    body.contrast-high .widget ul li > a:hover {
+      color: black; }
+  body.contrast-high .accessibility-controls {
+    box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.5); }
+  body.contrast-high.customer-service-page .col-sm-6.column_container,
+  body.contrast-high .sf-button.accent {
+    border: 1px solid #fff; }
+  body.contrast-high .sf-button.accent {
+    background-color: black !important;
+    color: white; }
+    body.contrast-high .sf-button.accent:hover, body.contrast-high .sf-button.accent:focus {
+      color: lightgray; }
+  body.contrast-high .access-control-trigger {
+    color: white !important; }
+  body.contrast-high input[type="text"], body.contrast-high input[type="email"], body.contrast-high input[type="password"], body.contrast-high textarea, body.contrast-high select, body.contrast-high .wpcf7 input[type="text"], body.contrast-high .wpcf7 input[type="email"], body.contrast-high .wpcf7 textarea, body.contrast-high .wpcf7 select, body.contrast-high .ginput_container input[type="text"], body.contrast-high .ginput_container input[type="email"], body.contrast-high .ginput_container textarea, body.contrast-high .ginput_container select, body.contrast-high .mymail-form input[type="text"], body.contrast-high .mymail-form input[type="email"], body.contrast-high .mymail-form textarea, body.contrast-high .mymail-form select {
+    background-color: black !important;
+    color: white !important; }
+  body.contrast-high input[type="button"].btn-info, body.contrast-high .recent-post figure, body.contrast-high span.highlighted, body.contrast-high span.dropcap4, body.contrast-high .loved-item:hover .loved-count, body.contrast-high .flickr-widget li, body.contrast-high .portfolio-grid li, body.contrast-high input[type="submit"], body.contrast-high .wpcf7 input.wpcf7-submit[type="submit"], body.contrast-high .gform_wrapper input[type="submit"], body.contrast-high .mymail-form input[type="submit"], body.contrast-high .woocommerce-page nav.woocommerce-pagination ul li span.current, body.contrast-high .woocommerce nav.woocommerce-pagination ul li span.current, body.contrast-high figcaption .product-added, body.contrast-high .woocommerce .wc-new-badge, body.contrast-high .yith-wcwl-wishlistexistsbrowse a, body.contrast-high .yith-wcwl-wishlistaddedbrowse a, body.contrast-high .woocommerce .widget_layered_nav ul li.chosen > *, body.contrast-high .woocommerce .widget_layered_nav_filters ul li a, body.contrast-high .sticky-post-icon, body.contrast-high .fw-video-close:hover {
+    border: 1px solid white !important;
+    background-color: black !important;
+    color: white !important; }
+  body.contrast-high .icon-home {
+    background-image: url("img/home-icon.png"); }
+  body.contrast-high nav#main-navigation .menu > li > a span.nav-line {
+    background-color: white; }
+  body.contrast-high .access-control-trigger {
+    background-color: black;
+    border: 1px solid white;
+    color: white; }
+
+body.no-transition .owl-carousel .owl-wrapper, body.no-transition .owl-carousel .owl-item,
+body.no-transition .owl-carousel .owl-wrapper-outer.autoHeight {
+  transition: none !important; }
+body.no-transition .sf-animation {
+  opacity: 1 !important; }
+body.no-transition .owl-carousel .owl-wrapper-outer {
+  overflow-x: auto !important; }
+body.no-transition .sf-count-asset .count-subject {
+  opacity: 1 !important;
+  bottom: 0px !important; }
+body.no-transition.home .spb_parallax_asset.sf-parallax {
+  background-image: none !important;
+  background-color: #012B65 !important; }
+
+/*# sourceMappingURL=accessibility.css.map */

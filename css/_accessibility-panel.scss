@@ -1,0 +1,540 @@
+//a:focus{
+//    box-shadow: 0px 0px 8px rgba(0, 187, 255, 0.54);
+//    color: inherit;
+//}
+
+$yna-access-primary-color: black;
+$yna-access-top: 115px;
+
+.sr-only-focusable{
+    display: block;
+    padding: 1em !important;
+    font-size: 110%;
+    color: #fff !important;
+    background-color: black;
+    outline: 0;
+    text-align: center;
+
+    &:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+    }
+
+}
+
+.access-control-trigger{
+    background-color: $yna-access-primary-color;
+    font-size: 115%;
+    color: white;
+    position: fixed;
+    z-index: 9999999;
+    top: $yna-access-top;
+    left: -3px;
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 5px;
+    &:hover,
+    &:active,
+    &:focus{
+        color: white;
+    }
+
+    @include media($big-phone) {
+        top: auto;
+        bottom: 57px;
+    }
+
+}
+
+.mm-opened {
+    .access-control-trigger {
+        display: none;
+
+    }
+}
+
+.rtl .access-control-trigger{
+    left: auto;
+    right: -3px;
+}
+
+.accessibility-controls{
+    width: 280px;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 999999;
+    top: $yna-access-top + 30px;
+    left: -3px;
+    display: none;
+    &.active{
+        display: block;
+    }
+
+    @include media($big-phone) {
+        top: 65px;
+    }
+
+    .controls-group{
+        margin-bottom: 8px;
+        h3{
+            font-size: 110%;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 3px;
+        }
+        .change-font-size{
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 1;
+
+            &.change-font-150{
+                font-size: 24px;
+            }
+            &.change-font-200{
+                font-size: 32px;
+            }
+            &:focus,
+            &:active{
+                border: 1px dotted black;
+            }
+            &.active{
+                border: 1px dotted black;
+            }
+        }
+        .change-contrast{
+            margin-bottom: 5px;
+            padding: 3px 5px;
+            border: 1px solid black;
+            cursor: pointer;
+            &.change-contrast-gray{
+                background-color: lightgrey;
+            }
+            &.change-contrast-high{
+                color: white;
+                background-color: black;
+            }
+        }
+
+        .flash-block{
+            width: 50%;
+            float: right;
+            padding: 5px 6px;
+            border: 1px solid black;
+            text-align: center;
+            cursor: pointer;
+            &:last-child{
+                border-right: 0;
+            }
+            &.active{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .access-control-close{
+        clear: both;
+        display: block;
+        margin-top: 50px;
+        padding: 5px 6px;
+        border: 1px solid black;
+        text-align: center;
+        color: black;
+    }
+
+}
+
+.rtl .accessibility-controls{
+    left: auto;
+    right: -3px;
+}
+
+body.font-size-150{
+    font-size: 22px;
+}
+
+body.font-size-200{
+    font-size: 32px;
+}
+
+
+body.contrast-gray{
+
+    $bg-gray: darken(darkgray, 80);
+    $text-gray: darken(darkgray, 30);
+
+    img,
+    .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a{
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+    }
+
+    .main-navigation ul.nav-menu>li ul.sub-menu li a {
+        color: white !important;
+        &:hover,
+        &:focus{
+            color: darkgray;
+        }
+    }
+
+    .owl-theme .owl-controls .owl-page.active span{
+        background-color: $bg-gray;
+    }
+
+    .hp-carousel-item{
+        background: $bg-gray !important;
+        a{
+            color: white !important;
+        }
+    }
+
+    a,
+    #footer a
+    {
+        text-decoration: underline;
+    }
+
+    h1, h2, h3, h4,
+    .sf-count-asset .count-number, .sf-count-asset .count-subject,
+    #footer h6,
+    #footer,
+    a,
+    #footer p,
+    #footer a,
+    nav#main-navigation .menu ul.sub-menu > li a,
+    .sf-count-asset .count-subject{
+        color: $text-gray;
+    }
+
+    nav#main-navigation .menu ul.sub-menu > li a:hover,
+    nav .menu ul.sub-menu li.menu-item:hover > a,
+    nav .menu ul.sub-menu li.menu-item > a:hover{
+        color: black;
+    }
+
+
+    .projects-loop .project .content {
+        background-color: $bg-gray !important;
+    }
+
+    section.projects .section-footer {
+        background-color: white;
+
+        .icon {
+            color: $text-gray;
+        }
+
+    }
+
+    .projects-loop .project .content .post-cats a,
+    .projects-loop .project .content h3,
+    .projects-loop .project .content{
+        color: white !important;
+    }
+
+    .sidebar .widget li.current_page_item > a,
+    #sevice-center #up,
+    .widget ul li > a{
+        color: $text-gray;
+        &:hover{
+            color: black;
+        }
+    }
+
+    .sf-button.accent{
+        background-color: $bg-gray;
+        color: white;
+        &:hover,
+        &:focus{
+            color: black;
+        }
+    }
+
+    .access-control-trigger{
+        color: white !important;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea, select, .wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea, .wpcf7 select, .ginput_container input[type="text"], .ginput_container input[type="email"], .ginput_container textarea, .ginput_container select, .mymail-form input[type="text"], .mymail-form input[type="email"], .mymail-form textarea, .mymail-form select{
+        background-color: lightgray !important;
+        border-color: black;
+        color: black !important;
+    }
+
+    .recent-post figure, span.highlighted, span.dropcap4, .loved-item:hover .loved-count,
+    .flickr-widget li, .portfolio-grid li,
+    input[type="submit"],
+    .wpcf7 input.wpcf7-submit[type="submit"],
+    .gform_wrapper input[type="submit"],
+    .mymail-form input[type="submit"],
+    .woocommerce-page nav.woocommerce-pagination ul li span.current,
+    .woocommerce nav.woocommerce-pagination ul li span.current,
+    figcaption .product-added,
+    .woocommerce .wc-new-badge,
+    .yith-wcwl-wishlistexistsbrowse a, .yith-wcwl-wishlistaddedbrowse a, .woocommerce .widget_layered_nav ul li.chosen > *, .woocommerce .widget_layered_nav_filters ul li a, .sticky-post-icon, .fw-video-close:hover{
+        background-color: $bg-gray !important;
+        color: $text-gray !important;
+    }
+
+    input[type="button"].btn-info{
+        background-color: lightgray;
+        color: black;
+        border-color: black;
+    }
+
+    .map-filters,
+    .top-image .top-image-container .text .container h1{
+        background-color: lightgray;
+        color: black;
+    }
+
+    nav#main-navigation .menu > li > a span.nav-line{
+        background-color: black;
+    }
+
+    .btn {
+        border: 2px solid $text-gray;
+        &:hover {
+            color: white !important;
+            background-color: $bg-gray;
+        }
+    }
+
+    .more a:hover, .more a:focus {
+        background-color: $dark-gray;
+        color: white !important;
+    }
+
+
+    .sow-carousel-wrapper ul.sow-carousel-items li.sow-carousel-item .sow-carousel-thumbnail a span.overlay {
+        background: $bg-gray;
+    }
+
+
+}
+
+body.contrast-high{
+
+    $bg-black: black !important;
+    $text-white: white !important;
+
+    color: $text-white;
+    background-color: $bg-black;
+
+    .mm-page {
+        color: $text-white;
+        background-color: $bg-black;
+    }
+
+
+    .main-navigation ul.nav-menu>li {
+        a {
+            color: black !important;
+        }
+        ul li a {
+            color: white !important;
+        }
+    }
+
+    .page-content,
+    header#header,
+    #header-section #main-nav,
+    section#footer,
+    .accessibility-controls,
+    section.projects .section-header,
+    .projects-loop .project .content
+    {
+        background-color: $bg-black;
+    }
+
+    .accessibility-controls .controls-group .change-contrast.change-contrast-normal,
+    #language-btn,
+    .ss-search{
+        background-color: white !important;
+        color: black !important;
+    }
+
+    #sevice-center #down,
+    #login-menu a span,
+    nav#main-navigation .menu li.menu-item > a
+    {
+        color: $text-white;
+    }
+
+    nav .menu > li.menu-item > a,
+    .ui-widget-content a,
+    nav .menu ul.sub-menu li.menu-item:hover > a,
+    a{
+        color: $text-white;
+        &:hover,
+        &:focus{
+            color: lightgray;
+        }
+    }
+
+    .owl-theme .owl-controls .owl-page.active span{
+        background-color: $text-white           ;
+    }
+
+    .menu-left nav.mega-menu li .sub-container,
+    nav.mega-menu li .mega .sub > .row,
+    #page-wrap{
+        background-color: $bg-black;
+    }
+
+    nav#main-navigation .menu ul.sub-menu > li a:hover{
+        text-decoration: underline !important;
+    }
+
+    .hp-carousel-item{
+        background: $bg-black;
+        a{
+            color: $text-white;
+        }
+    }
+
+    a,
+    #footer a
+    {
+        text-decoration: underline;
+    }
+
+    h1, h2, h3, h4,
+    .sf-count-asset .count-number, .sf-count-asset .count-subject,
+    #footer h6,
+    #footer,
+    a,
+    #footer p,
+    #footer a,
+    nav#main-navigation .menu ul.sub-menu > li a,
+    .sf-count-asset .count-subject{
+        color: $text-white;
+    }
+
+    nav#main-navigation .menu ul.sub-menu > li a:hover,
+    nav .menu ul.sub-menu li.menu-item:hover > a,
+    nav .menu ul.sub-menu li.menu-item > a:hover{
+        color: black;
+    }
+
+    #language-btn,
+    a.sf-button.sf-icon-stroke i{
+        color: white;
+    }
+
+    .sidebar .widget li.current_page_item > a,
+    #sevice-center #up,
+    .widget ul li > a{
+        color: $text-white;
+        &:hover{
+            color: black;
+        }
+    }
+
+    .accessibility-controls {
+        box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.5);
+    }
+
+    &.customer-service-page .col-sm-6.column_container,
+    .sf-button.accent{
+        border: 1px solid #fff;
+    }
+
+    .sf-button.accent,
+    .btn{
+        background-color: $bg-black;
+        color: white;
+        &:hover,
+        &:focus{
+            color: lightgray;
+        }
+    }
+
+    .magazine {
+        background-color: white;
+
+        .section-header {
+            h1 {
+                color: $bg-black;
+            }
+            color: $bg-black;
+        }
+
+        .home-posts .magazine-post {
+            background-color: $bg-black;
+            color: $text-white;
+        }
+    }
+
+    .access-control-trigger{
+        color: $text-white;
+    }
+
+    #{$all-text-inputs}{
+        background-color: $bg-black;
+        color: $text-white;
+        border: 1px solid white !important;
+    }
+
+    input[type="button"].btn-info, .recent-post figure, span.highlighted, span.dropcap4, .loved-item:hover .loved-count, .flickr-widget li, .portfolio-grid li, input[type="submit"], .wpcf7 input.wpcf7-submit[type="submit"], .gform_wrapper input[type="submit"], .mymail-form input[type="submit"], .woocommerce-page nav.woocommerce-pagination ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, figcaption .product-added, .woocommerce .wc-new-badge, .yith-wcwl-wishlistexistsbrowse a, .yith-wcwl-wishlistaddedbrowse a, .woocommerce .widget_layered_nav ul li.chosen > *, .woocommerce .widget_layered_nav_filters ul li a, .sticky-post-icon, .fw-video-close:hover{
+        border: 1px solid $text-white;
+        background-color: $bg-black;
+        color: $text-white;
+    }
+
+    .icon-home{
+        background-image: url('img/home-icon.png');
+    }
+
+    nav#main-navigation .menu > li > a span.nav-line{
+        background-color: white;
+    }
+
+    .access-control-trigger{
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .text.page-title {
+        background-color: $bg-black;
+    }
+
+}
+
+body.no-transition{
+
+    .owl-carousel .owl-wrapper, .owl-carousel .owl-item,
+    .projects-loop .project:hover .image img,
+    .projects-loop .project:hover .content,
+    .owl-carousel .owl-wrapper-outer.autoHeight{
+        transition: none !important;
+    }
+
+    .sf-animation{
+        opacity: 1 !important;
+    }
+
+    .owl-carousel .owl-wrapper-outer{
+        overflow-x: auto !important;
+    }
+
+    .sf-count-asset .count-subject{
+        opacity: 1 !important;
+        bottom: 0px !important;
+    }
+
+    &.home .spb_parallax_asset.sf-parallax{
+        background-image: none !important;
+        background-color: #012B65 !important;
+    }
+
+
+}
