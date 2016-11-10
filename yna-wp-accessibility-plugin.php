@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: Y&A
  * Author URI: http:www.yna.co.il
- * Plugin Site: http://www.yna.co.il/נגישות-אתרי-אינטרנט/
+ * Plugin Site: http://www.yna.co.il/%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA-%D7%90%D7%AA%D7%A8%D7%99-%D7%90%D7%99%D7%A0%D7%98%D7%A8%D7%A0%D7%98/
  * 
  **/
 
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')){
 
 //Global options var
 
-$yna_accessibility = get_option('yna_accessibility_options');
+$yna_accessibility_options = get_option('yna_accessibility_options');
 
 //Load scripts
 require_once (plugin_dir_path(__FILE__) . 'inc/yna-wp-accessibility-scripts.php');

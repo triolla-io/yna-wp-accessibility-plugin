@@ -43,15 +43,9 @@ function yna_accessibility_options_content(){
                         </label>
                     </th>
                     <td>
-                        <input type="checkbox" name="yna_accessibility_settings[enable]" value="1" <?php checked( '1', $yna_accessibility[ 'enable']) ;?> id="yna_accessibility_settings[enable]">
+                        <input type="checkbox" name="yna_accessibility_settings[enable]" value="1" <?php checked( '1', $yna_accessibility_options[ 'enable']) ;?> id="yna_accessibility_settings[enable]">
                     </td>
                 </tr>
-
-                <th>
-
-                </th>
-
-
                 </tbody>
 
             </table>
