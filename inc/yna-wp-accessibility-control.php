@@ -81,13 +81,5 @@ if (!defined('ABSPATH')){
     </div>
 
 
-<?php
-
-
-                if($yna_accessibility_options['enable']){
-                        return $content;
-
-                }
-
-            }
-add_filter('init', 'yna_accessibility_content');
+<?php };
+add_filter('wp', 'yna_accessibility_content');

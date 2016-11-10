@@ -25,7 +25,9 @@ function yna_accessibility_options_content(){
 // init global variable for options
 
     global $yna_accessibility_options;
-
+    $checked = $yna_accessibility_options['enable'];
+    $current = 1;
+    $echo = true;
     ob_start();?>
 
     <div class="wrap">
@@ -45,8 +47,9 @@ function yna_accessibility_options_content(){
                         </label>
                     </th>
                     <td>
-                        <input type="checkbox" name="yna_accessibility_settings[enable]" value="1" <?php checked( '1', $yna_accessibility_options[ 'enable']) ;?> id="yna_accessibility_settings[enable]">
+                        <input type="checkbox" name="yna_accessibility_settings[enable]" value="1" <?php checked( $checked, $current, $echo ) ;?> id="yna_accessibility_settings[enable]">
                     </td>
+                    <?php var_dump($yna_accessibility_options['enable']);?>
                 </tr>
                 </tbody>
 
