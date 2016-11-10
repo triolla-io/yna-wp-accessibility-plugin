@@ -17,7 +17,7 @@ if (!defined('ABSPATH')){
 
 //Global options var
 
-$yna_accessibility_options = get_option('yna_accessibility_options');
+$yna_accessibility_options = get_option('yna_accessibility_settings');
 
 //Load scripts
 require_once (plugin_dir_path(__FILE__) . 'inc/yna-wp-accessibility-scripts.php');

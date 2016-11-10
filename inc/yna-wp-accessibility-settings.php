@@ -8,7 +8,9 @@ get_template_part('accessibility', 'controls')
 
 <?php
 
-
+if (!defined('ABSPATH')){
+    exit;
+}
 
 // Create the Menu link
 
@@ -33,7 +35,7 @@ function yna_accessibility_options_content(){
         </p>
         <form action="options.php" method="post">
 
-            <?php settings_fields('yna_accessibility_gruop') ;?>
+            <?php settings_fields('yna_accessibility_settings_group') ;?>
             <table class="form-table">
                 <tbody>
                 <tr>
@@ -66,7 +68,7 @@ add_action('admin_menu','yna_accessibility_options_menu_link');
 //register the settings
 
 function yna_accessibility_register_settings(){
-    register_setting('yna_accessibility_settings_gruop', 'yna_accessibility_settings');
+    register_setting('yna_accessibility_settings_group', 'yna_accessibility_settings');
 
 }
 add_action('admin_init', 'yna_accessibility_register_settings');

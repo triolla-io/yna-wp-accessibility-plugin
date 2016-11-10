@@ -1,10 +1,18 @@
+<?php
+
+if (!defined('ABSPATH')){
+    exit;
+}
+?>
+
 <?php function yna_accessibility_content($content){
 
     global $yna_accessibility_options;
     ?>
 
     <a href="#accessibility-controls" tabindex="1" class="access-control-trigger">
-        <?php _e('Accessibility', 'yna') ?>
+<!--        --><?php //_e('Accessibility', 'yna') ?>
+    <i class="fa fa-universal-access fa-3x"></i>
     </a>
 
     <div id="accessibility-controls" class="accessibility-controls" tabindex="-1" role="dialog" aria-labelledby="accessibility-dialog-label">
@@ -74,8 +82,12 @@
 
 
 <?php
+
+
                 if($yna_accessibility_options['enable']){
                         return $content;
+
                 }
+
             }
-add_filter('the_content', 'yna_accessibility_content');
+add_filter('init', 'yna_accessibility_content');

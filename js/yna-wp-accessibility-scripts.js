@@ -24,7 +24,7 @@
 // version: 2.1.6
 // homepage: https://github.com/orgsync/jquery-aria
 // dependency: jQuery, ~> 1.7.1
-
+console.log('ok');
 (function ($) {
     $.extend({
         // Public: Gets and sets ARIA attributes.
