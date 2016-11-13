@@ -1,0 +1,103 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YNA WP Accessibility Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-13 07:14+0000\n"
+"PO-Revision-Date: 2016-11-13 07:22+0000\n"
+"Last-Translator: ynaadminyna <ido.b@yna.co.il>\n"
+"Language-Team: Hebrew\n"
+"Language: he-IL\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: inc/yna-wp-accessibility-control.php:33
+#: inc/yna-wp-accessibility-control.php:42
+#: inc/yna-wp-accessibility-control.php:51
+msgid "A"
+msgstr "א"
+
+#: inc/yna-wp-accessibility-control.php:20
+msgid "Site accessibility"
+msgstr "נגישות האתר"
+
+#: inc/yna-wp-accessibility-control.php:24
+msgid "Change font size"
+msgstr "שנה גודך פונט"
+
+#: inc/yna-wp-accessibility-control.php:32
+#: inc/yna-wp-accessibility-control.php:41
+msgid "Change the font size to 100%"
+msgstr "הגדל פונט ב-100%"
+
+#: inc/yna-wp-accessibility-control.php:50
+msgid "Change the font size to 200%"
+msgstr "הגדל פונט ב-200%"
+
+#: inc/yna-wp-accessibility-control.php:55
+msgid "Change contrast"
+msgstr "שנה ניגודיות"
+
+#: inc/yna-wp-accessibility-control.php:57
+#: inc/yna-wp-accessibility-control.php:58
+msgid "Normal contrast"
+msgstr "נגודיות רגילה"
+
+#: inc/yna-wp-accessibility-control.php:61
+#: inc/yna-wp-accessibility-control.php:62
+msgid "Grayscale"
+msgstr "גווני אפור"
+
+#: inc/yna-wp-accessibility-control.php:65
+#: inc/yna-wp-accessibility-control.php:66
+msgid "High contrast"
+msgstr "ניגודיות גבוהה"
+
+#: inc/yna-wp-accessibility-control.php:70
+msgid "Block flashes"
+msgstr "חסום אנימציית פלאש"
+
+#: inc/yna-wp-accessibility-control.php:72
+#: inc/yna-wp-accessibility-control.php:73
+msgid "On"
+msgstr "הדלקה"
+
+#: inc/yna-wp-accessibility-control.php:76
+#: inc/yna-wp-accessibility-control.php:77
+msgid "Off"
+msgstr "כיבוי"
+
+#: inc/yna-wp-accessibility-control.php:80
+msgid "Close"
+msgstr "סגור"
+
+#: inc/yna-wp-accessibility-settings.php:34
+msgid "Yna Accessibility Plugin"
+msgstr "תוסף נגישות של YNA"
+
+#: inc/yna-wp-accessibility-settings.php:36
+msgid "Settings For the Yna Accessibility Plugin"
+msgstr "הגדרות תוסף נגישות של YNA"
+
+#: inc/yna-wp-accessibility-settings.php:46
+msgid "Enable Accessibility Options"
+msgstr "אפשר שימוש בתוסף נגישות"
+
+#: inc/yna-wp-accessibility-settings.php:58
+msgid "Save Changes"
+msgstr "שמור שינויים"
+
+#. Name of the plugin
+#. Description of the plugin
+msgid "YNA WP Accessibility Plugin"
+msgstr "תוסף נגישות של YNA"
+
+#. Author of the plugin
+msgid "Y&A"
+msgstr "Y&A"
+
+#. Author URI of the plugin
+msgid "http:www.yna.co.il"
+msgstr "http://www.yna.co.il"
