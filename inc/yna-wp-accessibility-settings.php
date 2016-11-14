@@ -49,7 +49,7 @@ function yna_accessibility_options_content(){
                     <td>
                         <input type="checkbox" name="yna_accessibility_settings[enable]" value="1" <?php checked( $checked, $current, $echo ) ;?> id="yna_accessibility_settings[enable]">
                     </td>
-                    <?php var_dump($yna_accessibility_options['enable']);?>
+<!--                    --><?php //var_dump($yna_accessibility_options['enable']);?>
                 </tr>
                 </tbody>
 

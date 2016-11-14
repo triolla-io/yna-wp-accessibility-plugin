@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="YNA WP Accessibility Plugin">
+  <domain name="ynaap_domain">
+    <project name="YNA WP Accessibility Plugin" slug="ynaap_domain">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>lang</directory>
+      </target>
+      <template>
+        <file>lang/ynaap_domain.pot</file>
+      </template>
+    </project>
+  </domain>
+</bundle>
