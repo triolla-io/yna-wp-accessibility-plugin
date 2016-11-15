@@ -1,22 +1,36 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: YNA WP Accessibility Plugin\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-14 10:13+0000\n"
-"PO-Revision-Date: 2016-11-14 12:17+0000\n"
-"Last-Translator: ynaadminyna <ido.b@yna.co.il>\n"
-"Language-Team: Hebrew\n"
-"Language: he-IL\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
+"POT-Creation-Date: 2016-11-15 15:37+0200\n"
+"PO-Revision-Date: 2016-11-15 15:40+0200\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco - https://localise.biz/"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Language: he_IL\n"
+
+#: inc/yna-wp-accessibility-control.php:20
+msgid "Site accessibility"
+msgstr "נגישות האתר"
+
+#: inc/yna-wp-accessibility-control.php:24
+msgid "Change font size"
+msgstr "שנה גודל טקסט"
 
 #: inc/yna-wp-accessibility-control.php:32
 #: inc/yna-wp-accessibility-control.php:41
 msgid "Change the font size to 100%"
 msgstr "שנה גודל טקסט ל 100%"
+
+#: inc/yna-wp-accessibility-control.php:33
+#: inc/yna-wp-accessibility-control.php:42
+#: inc/yna-wp-accessibility-control.php:51
+msgid "A"
+msgstr "א"
 
 #: inc/yna-wp-accessibility-control.php:50
 msgid "Change the font size to 200%"
@@ -43,7 +57,7 @@ msgstr "ניגודיות גבוהה"
 
 #: inc/yna-wp-accessibility-control.php:70
 msgid "Block flashes"
-msgstr "חסום אנימציית פלאש"
+msgstr "חסום אנימציות פלאש"
 
 #: inc/yna-wp-accessibility-control.php:72
 #: inc/yna-wp-accessibility-control.php:73
@@ -61,11 +75,11 @@ msgstr "סגור"
 
 #: inc/yna-wp-accessibility-settings.php:34
 msgid "Yna Accessibility Plugin"
-msgstr "תוסף נגישות YNA"
+msgstr "תוסף נגישות של YNA"
 
 #: inc/yna-wp-accessibility-settings.php:36
 msgid "Settings For the Yna Accessibility Plugin"
-msgstr "הגדרות עבור תוסף נגישות YNA"
+msgstr "הגדרות של תוסף הנגישות של YNA"
 
 #: inc/yna-wp-accessibility-settings.php:46
 msgid "Enable Accessibility Options"
@@ -78,26 +92,12 @@ msgstr "שמור שינויים"
 #. Name of the plugin
 #. Description of the plugin
 msgid "YNA WP Accessibility Plugin"
-msgstr ""
+msgstr "תוסף נגישות של YNA"
 
 #. Author of the plugin
 msgid "Y&A"
-msgstr ""
+msgstr "Y&A"
 
 #. Author URI of the plugin
 msgid "http:www.yna.co.il"
-msgstr ""
-
-#: inc/yna-wp-accessibility-control.php:24
-msgid "Change font size"
-msgstr "שנה גודל פונט"
-
-#: inc/yna-wp-accessibility-control.php:20
-msgid "Site accessibility"
-msgstr "נגישות האתר"
-
-#: inc/yna-wp-accessibility-control.php:33
-#: inc/yna-wp-accessibility-control.php:42
-#: inc/yna-wp-accessibility-control.php:51
-msgid "A"
-msgstr "א"
+msgstr "http://www.yna.co.il"
